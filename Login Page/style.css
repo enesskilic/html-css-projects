@@ -1,0 +1,69 @@
+/* Simple Reset */
+*::after,
+*::before,
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+/* Form Styles */
+.form {
+  width: 100%;
+  padding: 48px 20px;
+  max-width: 380px;
+  text-align: center;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  font-size: 14px;
+  margin-bottom: 32px;
+  background: #dfe4ea;
+}
+
+.button {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: #5c37ff;
+}
+
+/* Form Validation */
+.form:invalid .button {
+  background: #333333;
+  pointer-events: none;
+}
+
+.form:valid .button {
+  pointer-events: initial;
+}

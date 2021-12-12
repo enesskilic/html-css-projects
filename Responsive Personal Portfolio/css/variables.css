@@ -1,0 +1,29 @@
+/* Variables */
+:root {
+    /* Colors */
+    --color-dark: #21243d;
+    --color-light: #8695a4;
+    --color-white: #ffffff;
+    --color-primary: #ff6464;
+    --color-secondary: #00a8cc;
+    --color-light-gray: #e0e0e0;
+    --color-light-accent: #edf7fa;
+  
+    /* Typography */
+    --font-family: "Heebo", sans-serif;
+  
+    --font-size-root: 10px;
+    --font-size-base: 1.6rem;
+  
+    --font-size-xxl: 4.4rem;
+    --font-size-xl: 3rem;
+    --font-size-lg: 2.6rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 1.8rem;
+  
+    /* Radius */
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --radius-lg: 16px;
+  }
+  

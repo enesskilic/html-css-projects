@@ -1,0 +1,28 @@
+/* Utilities */
+.container {
+    width: 855px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .align-start {
+    align-items: flex-start;
+  }
+  
+  .justify-end {
+    justify-content: end;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }

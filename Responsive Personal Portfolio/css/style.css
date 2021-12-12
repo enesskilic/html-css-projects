@@ -1,0 +1,42 @@
+/* Imports */
+@import url("reset.css");
+@import url("variables.css");
+@import url("config.css");
+@import url("utilities.css");
+@import url("components.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap");
+
+
+/* HERO */
+#section-hero {
+  padding-top: 14rem;
+  padding-bottom: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  #section-hero .container {
+    text-align: center;
+  }
+
+  #section-hero .d-flex {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+
+/* RECENT POSTS */
+#section-posts {
+  background-color: var(--color-light-accent);
+}
+
+@media screen and (max-width: 768px) {
+  .posts {
+    flex-wrap: wrap;
+  }
+}
+
+/* WORKS */
+#section-works {
+  padding-bottom: 5rem;
+}

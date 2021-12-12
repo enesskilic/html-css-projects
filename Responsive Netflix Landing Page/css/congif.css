@@ -1,0 +1,39 @@
+*::after,
+*::before,
+* {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  color: var(--color-text);
+  font-size: var(--font-size-body);
+  font-family: "Roboto", sans-serif;
+  background: var(--color-body-background);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: 1.35;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

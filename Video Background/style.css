@@ -1,0 +1,84 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+/* Simple Reset */
+*::after,
+*::before,
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    color: white;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Utilities */
+.container {
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation */
+.nav .container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li:not(:first-of-type){
+    margin-left: 32px;
+}
+
+/* Hero */
+.hero .container {
+    justify-content: center;
+}
+
+.title {
+    font-size: 54px;
+    margin-top: 84px;
+    text-align: center;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Video */
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}

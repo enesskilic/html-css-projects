@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="app">
+      <input type="checkbox" id="menu-toggle" />
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- header -->
+        <header class="sidebar-header d-flex">
+          <a href="#" class="logo d-flex">
+            <i class="logo-icon fas fa-square"></i>
+            <h4 class="logo-text">Elegant</h4>
+          </a>
+          <label class="menu-button" for="menu-toggle"
+            ><i class="menu-icon fas fa-bars"></i
+          ></label>
+        </header>
+
+        <!-- navigation -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link active d-flex">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link d-flex">
+                <i class="fas fa-folder"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- header -->
+        <div class="container">
+          <header class="content-header d-flex">
+            <div class="search d-flex">
+              <i class="fas fa-search"></i>
+              <input type="search" placeholder="Enter keywords..." />
+            </div>
+
+            <div class="avatar">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd14Txv031zmnOdB79hQpF03Vih_bR3e3ccvgiRQWe-_UUkV1cBMychdcfU1602SpaDe4&usqp=CAU"
+                alt=""
+              />
+            </div>
+          </header>
+        </div>
+
+        <!-- section -->
+        <section class="page">
+          <div class="container">
+            <h3 class="page-title">Dashboard</h3>
+          </div>
+
+          <div class="container">
+            <div class="card-wrapper">
+              <div class="card d-flex">
+                <div class="card-icon">
+                  <i>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18 20V10"
+                        stroke="#2F49D1"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 20V4"
+                        stroke="#2F49D1"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6 20V14"
+                        stroke="#2F49D1"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </i>
+                </div>
+
+                <div class="card-content">
+                  <p class="title count">475.285</p>
+                  <p class="card-title">Total visits</p>
+                  <p>Last mounth</p>
+                </div>
+              </div>
+
+              <div class="card d-flex">
+                <div class="card-icon">
+                  <i
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z"
+                        stroke="#FFB648"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13 2V9H20"
+                        stroke="#FFB648"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </i>
+                </div>
+
+                <div class="card-content">
+                  <p class="title count">475.285</p>
+                  <p class="card-title">Total articles</p>
+                  <p>Last mounth</p>
+                </div>
+              </div>
+
+              <div class="card d-flex">
+                <div class="card-icon">
+                  <i>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                        stroke="#5F2EEA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M22 6L12 13L2 6"
+                        stroke="#5F2EEA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </i>
+                </div>
+
+                <div class="card-content">
+                  <p class="title count">475.285</p>
+                  <p class="card-title">Total subscribtions</p>
+                  <p>Last mounth</p>
+                </div>
+              </div>
+
+              <div class="card d-flex">
+                <div class="card-icon">
+                  <i>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.24 12.24C21.3658 11.1142 21.9983 9.58722 21.9983 7.99504C21.9983 6.40285 21.3658 4.87588 20.24 3.75004C19.1142 2.62419 17.5872 1.9917 15.995 1.9917C14.4028 1.9917 12.8758 2.62419 11.75 3.75004L5 10.5V19H13.5L20.24 12.24Z"
+                        stroke="#4BDE97"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16 8L2 22"
+                        stroke="#4BDE97"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.5 15H9"
+                        stroke="#4BDE97"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </i>
+                </div>
+
+                <div class="card-content">
+                  <p class="title count">475.285</p>
+                  <p class="card-title">Total authors</p>
+                  <p>Last mounth</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- table -->
+          <div class="container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>Title</td>
+                  <td>Author</td>
+                  <td>Date</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

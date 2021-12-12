@@ -1,0 +1,285 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Inter", sans-serif;
+  --font-size-h1: 4rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.25rem;
+  --font-size-body: 0.875rem;
+
+  --color-title: #171717;
+  --color-blue: #0061f7;
+  --color-body: #767676;
+  --color-label: #b9b9b9;
+  --color-dark: #161624;
+  --color-light: #d9dbe9;
+  --color-white: #ffffff;
+  --color-input-bg: #eff0f6;
+  --color-content-bg: #f0f2fa;
+  --color-secondary: #b6c1e9;
+  --color-placeholder: #d6d7e3;
+  --color-sidebar-bg: #161624;
+  --color-hover-accent: rgba(255, 255, 255, 0.1);
+}
+
+/* Configuration */
+body {
+  font: normal var(--font-size-body) var(--font-family);
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-title);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+/* ==== Utilities ==== */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: var(--color-title);
+  font-weight: bold;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==== App Layout ==== */
+.app {
+  height: 100%;
+  display: flex;
+}
+
+.app .content {
+  flex: 1;
+}
+
+/* ==== Sidebar ==== */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  color: var(--color-white);
+  background-color: var(--color-sidebar-bg);
+}
+
+.sidebar-header {
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+}
+
+.logo-icon {
+  font-size: var(--font-size-h3);
+  transform: rotate(45deg);
+}
+
+.logo-text {
+  margin-left: 0.55rem;
+}
+
+.menu-button {
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .sidebar {
+  width: auto;
+}
+
+#menu-toggle:checked ~ .sidebar .logo {
+  display: none;
+}
+
+#menu-toggle:checked ~ .sidebar .nav .nav-link span {
+  display: none;
+}
+/* ==== Navigation ==== */
+.nav-link {
+  padding: 0.85rem 1.25rem;
+  justify-content: start;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link i {
+  margin-right: 0.625rem;
+}
+
+.nav-link.active {
+  color: var(--color-white);
+}
+
+.nav-link:hover {
+  background-color: var(--color-hover-accent);
+}
+
+/* ==== Content ==== */
+.content-header {
+  padding: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-white);
+}
+
+.search {
+  width: 270px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--color-input-bg);
+}
+
+.search i {
+  position: absolute;
+  left: 0.5rem;
+  color: var(--color-placeholder);
+  pointer-events: none;
+}
+
+.search input {
+  flex: 1;
+  height: 40px;
+  padding-left: 2.625rem;
+  padding-right: 0.5rem;
+  background: transparent;
+}
+
+.search input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 99%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==== Section ==== */
+.page {
+  height: auto;
+  min-height: calc(100vh - 5rem);
+  padding: 1.25rem;
+  overflow: auto;
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-row-gap: 20px;
+  background-color: var(--color-content-bg);
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 1.25rem;
+}
+
+.card {
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  justify-content: start;
+  background-color: var(--color-white);
+}
+
+.card-icon {
+  padding: 1.25rem;
+}
+
+.card-content {
+  color: var(--color-label);
+  margin-left: 0.625rem;
+}
+
+.card-title {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* ==== Table ==== */
+.table {
+  width: 100%;
+  color: var(--color-placeholder);
+  background-color: var(--color-sidebar-bg);
+}
+
+.table thead {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table tbody tr:hover {
+  background-color: var(--color-hover-accent);
+}
+
+.table td {
+  padding: 1rem 1.5rem;
+}
+
+/* ==== Responsive ==== */
+@media screen and (max-width: 992px) {
+  .menu-button,
+  .logo-text,
+  .nav-link span {
+    display: none !important;
+  }
+
+  .sidebar {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
