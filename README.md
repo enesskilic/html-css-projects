@@ -18,7 +18,7 @@ HTML and CSS sample projects for web developers.
 
 <a name="portfolio"></a>
 
-### Responsive Personal Portfolio - [Back to top](#portfolio)
+### Responsive Personal Portfolio - [Back to top](#content)
 
 <br />
 
