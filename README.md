@@ -1,6 +1,6 @@
 # HTML-CSS PROJECTS
 
-HTML and CSS sample projects for web developers.
+HTML and CSS projects for web developers.
 
 
 <a name="content"></a>
